@@ -4,19 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
+
     <title>Document</title>
-    <script defer src="index.js"></script>
   </head>
   <body>
-    <header>
-      <div><img src="./assets/img/Logo.png" alt="Logo" /></div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./assets/img/Logo.png" alt="Logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav--list">
+            <li class="header__nav--li">
+              <a href="#">About us <span>|</span></a>
+            </li>
+            <li class="header__nav--li">
+              <a href="#">Contact us <span>|</span></a>
+            </li>
+            <li class="header__nav--li">
+              <a href="#">Blog <span>|</span></a>
+            </li>
+            <li class="header__nav--li">
+              <a href="#">Site Map <span>|</span></a>
+            </li>
+            <li class="header__nav--li">
+              <a href="#">Eng <img src="assets/img/arrowBottom.svg" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__search">
+        <input class="header__search--input" placeholder="Search this site" />
+        <button class="header__search--button">
+          <img
+            class="header__search--img"
+            src="./assets/img/Loop.svg"
+            alt="Loop"
+          />
+        </button>
+      </div>
     </header>
+    <section class="hero">
+        <div class="hero__content">
+        <div class="hero__content--container">
+          <h1 class="hero__content--title">Lorem ipsum dolor sit amet</h1>
+          <h2 class="hero__content--subtitle">Lorem ipsum dolor sit amet</h2>
+          <p class="hero__content--text">
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          </p>
+          <button class="hero__content--button">Buy Now</button>
+        </div>
+        </div>
+        <div>
+            <img
+              class="hero__background"
+              src="./assets/img/unsplash_W5XTTLpk1-I.png"
+              alt="Background"
+            />
+        </div>
+      </section>
+    </section>
+    <section class="about">
+        <div class="about__item">
+           <img src="assets/img/Rectangle 570.png" alt="about__image" class="about__item--img" />
+           <div class="about__item--content">
+            <h2 class="about__item--header">About us</h2>
+            <p class="about__item--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a class="about__item--link">Learn more about</a>
+           </div>
+        </div>
+        <div class="about__item">
+           <img src="assets/img/Rectangle 570.png" alt="about__image" class="about__item--img" />
+           <div class="about__item--content">
+            <h2 class="about__item--header">About us2</h2>
+            <p class="about__item--text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus. Senectus sed maecenas viverra tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+            </p>
+            <a class="about__item--link">Learn more about</a>
+           </div>
+        </div>
+    </section>
+   <footer class="footer">
+  <div class="footer__content">
+    <ul class="footer__list">
+      <li class="footer__item footer__item--subscribe">
+        <h2 class="footer__title">PlantMe</h2>
+        <p class="footer__description">
+          Subscribe and be the first to know about our news and promotions.
+        </p>
+        <form class="footer__form" action="#" method="post">
+          <input
+            class="footer__input"
+            placeholder="example@gmail.com"
+            type="email"
+            name="email"
+            required
+          />
+          <button class="footer__button" type="submit">Subscribe</button>
+        </form>
+      </li>
+
+      <!-- Секція навігації -->
+      <li class="footer__item footer__item--navigation">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="#">About Us</a></li>
+            <li class="footer__nav-item"><a href="#">Contact Us</a></li>
+            <li class="footer__nav-item"><a href="#">Blog</a></li>
+            <li class="footer__nav-item"><a href="#">Site Map</a></li>
+          </ul>
+        </nav>
+      </li>
+
+      <!-- Секція контактів -->
+      <li class="footer__item footer__item--contacts">
+        <h3 class="footer__contacts-title">Contacts</h3>
+        <p class="footer__contacts-phone">+380630720121</p>
+        <p class="footer__contacts-email">plantme.store@gmail.com</p>
+        <div class="footer__payment-methods">
+          <img class="footer__payment-logo" src="assets/img/visa.png" alt="Visa" />
+          <img class="footer__payment-logo" src="assets/img/mc.png" alt="MasterCard" />
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Нижній рядок авторських прав -->
+  <div class="footer__copyright">
+    <p class="footer__copyright-text">
+      <span>© 2022 PlantMe. All Rights Reserved</span>
+    </p>
+    <nav class="footer__policy-nav">
+      <ul class="footer__policy-list">
+        <li class="footer__policy-item"><a href="#">Privacy Policy</a></li>
+        <li class="footer__policy-item"><a href="#">Terms of Service</a></li>
+        <li class="footer__policy-item"><a href="#">Language</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
   </body>
 </html>

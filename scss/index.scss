@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  font-family: "Playfair Display", serif;
 }
 
 body {
@@ -134,7 +135,7 @@ body {
 .about {
   display: flex;
   justify-content: space-between;
-  padding: 1.6rem 6.4rem;
+  padding: 8rem 6.4rem;
   gap: 1.8rem;
   &__item {
     width: 64.7rem;
@@ -183,7 +184,152 @@ body {
   }
 }
 
+.contact {
+  height: 63.7rem;
+  width: 131.2rem;
+  padding: 1.6rem 6.4rem;
+  display: flex;
+  &__content {
+    width: 42.5rem;
+    height: 100%;
+    padding: 4.2rem;
+    display: flex;
+    border-radius: 1.2rem;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../assets/img/Rectangle\ 573.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &--container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 33.5rem;
+    }
+    &--header {
+      font-size: 4.8rem;
+      font-weight: 700;
+      text-align: left;
+      margin-bottom: 1.6rem;
+    }
+    &--text {
+      font-family: Outfit;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.1rem;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      margin-bottom: 5.6rem;
+    }
+    &--list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.9rem;
+    }
+    &--item {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.1rem;
+      gap: 2.4rem;
+    }
+    &--img {
+      width: 2.4rem;
+    }
+  }
+  &__container {
+    &--medias {
+      display: flex;
+      padding-bottom: 4.2rem;
+      gap: 3.6rem;
+    }
+    &--media {
+      list-style: none;
+      width: 2.8rem;
+    }
+  }
+
+  &__form {
+    padding-inline: 2rem;
+    padding-block: 4.8rem;
+    &--data {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem;
+      gap: 1.8rem;
+    }
+    &--label {
+      font-family: Outfit;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      text-align: left;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+      color: black;
+    }
+    &--item {
+      input {
+        width: 41.6rem;
+        height: 4.4rem;
+        border: 1px solid black;
+        border-radius: 3px;
+        outline: none;
+      }
+      input:focus {
+        border: 2px solid #3a6150;
+      }
+    }
+    &--profession {
+      display: flex;
+      gap: 3.6rem;
+      margin-top: 2.6rem;
+      margin-bottom: 2.6rem;
+    }
+    &--prof {
+      list-style: none;
+    }
+    &--radio {
+      display: grid;
+      place-content: center;
+      appearance: none;
+      margin: 10% 0 0;
+      width: 2rem;
+      height: 1rem;
+      align-items: center;
+      background-color: #fff;
+    }
+    &--checkboxes {
+      display: flex;
+    }
+    &--button {
+      width: 19.6rem;
+      height: 4.9rem;
+      border: none;
+      background-color: #3a6150;
+      color: white;
+      gap: 1rem;
+      border-radius: 2px;
+      opacity: 0px;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
+
+    &--textarea {
+      width: 100%;
+      height: 10.4rem;
+      outline: none;
+    }
+  }
+}
+
 .footer {
+  padding: 0 6.4rem;
   &__title {
     font-family: Outfit;
     font-size: 48px;
@@ -203,6 +349,7 @@ body {
     .footer__list {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       width: 100%;
       list-style: none;
       padding: 0;
@@ -245,7 +392,7 @@ body {
             .footer__button {
               width: 19.5rem;
               height: 5.4rem;
-              gap: 10px;
+              gap: 1rem;
               opacity: 0px;
               background-color: #3a6150;
               border: none;
@@ -264,39 +411,56 @@ body {
           flex-basis: 20%;
 
           .footer__nav-item {
-            margin-bottom: 10px;
+            margin-bottom: 1rem;
             font-size: 1rem;
             color: #212529;
-
+            list-style: none;
             &:hover {
               text-decoration: underline;
               cursor: pointer;
             }
           }
+          .footer__nav-item a {
+            text-decoration: none;
+            font-family: Outfit;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.7rem;
+            text-align: left;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+
+            color: black;
+          }
         }
 
         &--contacts {
-          flex-basis: 30%;
-
           .footer__contacts-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 15px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: left;
           }
 
           .footer__contacts-phone,
           .footer__contacts-email {
-            font-size: 1rem;
-            margin-bottom: 10px;
+            font-family: Outfit;
+            font-size: 1.8rem;
+            font-weight: 400;
+            text-align: left;
+            color: #d0d1d3;
+          }
+
+          .footer__contacts-email {
+            text-decoration: underline;
           }
 
           .footer__payment-methods {
             display: flex;
-            gap: 10px;
-            margin-top: 10px;
+            gap: 1rem;
+            margin-top: 1rem;
 
             .footer__payment-logo {
-              width: 40px;
+              width: 5rem;
               height: auto;
             }
           }
@@ -307,30 +471,43 @@ body {
 
   &__copyright {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
+    border-top: 1px solid #e9e9e9;
+    padding: 1rem 2rem;
     font-size: 0.9rem;
+    width: 100%;
     color: #6c757d;
 
-    .footer__copyright-text {
+    .footer__copyright--text {
+      font-family: Outfit;
+      font-size: 1.4rem;
       font-weight: 400;
+      line-height: 2rem;
+      text-align: right;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+      margin-right: 20%;
     }
 
-    .footer__policy-list {
+    .footer__policy--list {
       display: flex;
       list-style: none;
       gap: 15px;
+      padding-right: 1.6rem;
 
-      .footer__policy-item {
-        a {
-          text-decoration: none;
-          color: #6c757d;
+      .footer__policy--item {
+        font-family: Outfit;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 2rem;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
 
-          &:hover {
-            text-decoration: underline;
-          }
+        &:hover {
+          text-decoration: underline;
         }
       }
     }
